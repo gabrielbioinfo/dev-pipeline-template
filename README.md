@@ -54,7 +54,8 @@ dev-pipeline-template/
 │           └── templates/
 │               ├── feature_spec.md            # Spec template — output of Step 1
 │               ├── task_breakdown.md          # Task breakdown template — output of Step 3
-│               └── budget_tracker.md          # Token/cost tracker — fill after each cloud step
+│               ├── budget_tracker.md          # Token/cost tracker — fill after each cloud step
+│               └── run_checklist.md           # Step-by-step checklist — copy per feature run
 ├── AGENTS.md                                  # Auto-loaded by OpenCode
 ├── CLAUDE.md                                  # Auto-loaded by Claude Code
 └── LICENSE                                    # MIT
@@ -69,7 +70,7 @@ dev-pipeline-template/
 Click **Use this template** on GitHub, or clone directly:
 
 ```bash
-git clone https://github.com/studiocraft-ai/dev-pipeline-template.git
+git clone https://github.com/gabrielbioinfo/dev-pipeline-template.git
 cd dev-pipeline-template
 ```
 
