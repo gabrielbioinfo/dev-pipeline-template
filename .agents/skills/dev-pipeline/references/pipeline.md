@@ -40,7 +40,12 @@ Use `templates/budget_tracker.md` to record actual usage per run.
 
 ---
 
-## Step 1 — Planning (Gemini Pro)
+## Step 1 — Planning
+
+> **MODEL:**
+> - **Primary:** Gemini Pro
+> - **Alternatives:** Claude Opus, GPT-4o
+> Open: AI Studio or gemini.google.com
 
 **Goal:** Produce a complete, unambiguous feature spec from a raw idea or brief.
 
@@ -73,7 +78,12 @@ Flag any assumptions you are making.
 
 ---
 
-## Step 2 — Validation (Claude Opus)
+## Step 2 — Validation
+
+> **MODEL:**
+> - **Primary:** Claude Opus
+> - **Alternatives:** Gemini Pro, GPT-4o
+> Open: claude.ai → new chat → Opus
 
 **Goal:** Catch gaps, contradictions, and untestable criteria before any code is written.
 
@@ -106,7 +116,12 @@ If FAIL, the spec goes back to Step 1. If PASS, proceed to Step 3.
 
 ---
 
-## Step 3 — Task Breakdown (Claude Sonnet)
+## Step 3 — Task Breakdown
+
+> **MODEL:**
+> - **Primary:** Claude Sonnet
+> - **Alternatives:** GPT-4o, Gemini Pro
+> Open: Claude Code or claude.ai → Sonnet
 
 **Goal:** Convert the validated spec into an ordered, test-first task list.
 
@@ -137,7 +152,12 @@ Do not include tasks for documentation or deployment — focus on code and tests
 
 ---
 
-## Step 4 — Write Tests (Qwen3 / Gemini Flash)
+## Step 4 — Write Tests
+
+> **MODEL:**
+> - **Primary:** Qwen3 or Gemini Flash (local inference)
+> - **Alternatives:** Llama 3, DeepSeek Coder, Claude Haiku
+> Zero or low cloud cost.
 
 **Goal:** Write the full test suite for the current task before writing any implementation code.
 
@@ -170,7 +190,12 @@ Tests should fail right now because the implementation does not exist yet.
 
 ---
 
-## Step 5 — Write Code (Qwen3 / Gemini Flash)
+## Step 5 — Write Code
+
+> **MODEL:**
+> - **Primary:** Qwen3 or Gemini Flash (local inference)
+> - **Alternatives:** Llama 3, DeepSeek Coder, Claude Haiku
+> Zero or low cloud cost.
 
 **Goal:** Write the minimum implementation needed to make the tests pass.
 
@@ -203,7 +228,12 @@ Output the implementation file(s) only.
 
 ---
 
-## Step 6 — Fix Until Green (Qwen3 / Gemini Flash)
+## Step 6 — Fix Until Green
+
+> **MODEL:**
+> - **Primary:** Qwen3 or Gemini Flash (local inference)
+> - **Alternatives:** Llama 3, DeepSeek Coder, Claude Haiku
+> Zero or low cloud cost.
 
 **Goal:** Iterate on the implementation until the full test suite is green.
 
@@ -233,7 +263,12 @@ Repeat until all tests pass.
 
 ---
 
-## Step 7 — Code Review (Claude Sonnet)
+## Step 7 — Code Review
+
+> **MODEL:**
+> - **Primary:** Claude Sonnet
+> - **Alternatives:** GPT-4o, Gemini Pro
+> Open: Claude Code or claude.ai → Sonnet
 
 **Goal:** Review the implementation for correctness, security, maintainability, and style.
 
@@ -273,7 +308,12 @@ If any MUST CHANGE items exist, fix them before proceeding to Step 8.
 
 ---
 
-## Step 8 — Integration Tests (Claude Sonnet)
+## Step 8 — Integration Tests
+
+> **MODEL:**
+> - **Primary:** Claude Sonnet
+> - **Alternatives:** GPT-4o, Gemini Pro
+> Open: Claude Code or claude.ai → Sonnet
 
 **Goal:** Validate the feature works end-to-end and does not break existing contracts.
 
@@ -308,7 +348,12 @@ Output:
 
 ---
 
-## Step 9 — Spec Validation (Gemini Pro)
+## Step 9 — Spec Validation
+
+> **MODEL:**
+> - **Primary:** Gemini Pro
+> - **Alternatives:** Claude Opus, GPT-4o
+> Open: AI Studio or gemini.google.com
 
 **Goal:** Confirm that every acceptance criterion in the original spec is demonstrably met.
 
